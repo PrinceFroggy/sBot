@@ -1,0 +1,167 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Collections;
+using System.Globalization;
+using System.Threading;
+using System.Resources;
+
+namespace sBot
+{
+    public partial class Form1 : Form
+    {
+        #region Form1
+
+        public Form1()
+        {
+            InitializeComponent();
+            InitializeForms();
+        }
+
+        private void Form1_LocationChanged(object sender, EventArgs e)
+        {
+            form2.Location = new Point(this.Location.X + 248, this.Location.Y - 5);
+        }
+
+        #endregion
+
+        #region Functions
+
+        #region Forms
+
+        #region Variables
+
+        Form2 form2;
+
+        #endregion
+
+        private void InitializeForms()
+        {
+            form2 = new Form2();
+        }
+
+        #endregion
+
+        #region Randomizer
+
+        #region Delegates
+
+        delegate void SetPictureCallback(Image logo);
+
+        #endregion
+
+        private void CallLogoRandomizer(Object state)
+        {
+            {
+                this.LogoRandomizer((Image)Properties.Resources.ResourceManager.GetObject("supreme_box_logo___" + new Random().Next(2, Properties.Resources.ResourceManager.GetResourceSet(CultureInfo.CurrentUICulture, true, true).Cast<Object>().Count() - 3).ToString()));
+            }
+        }
+        
+        private void LogoRandomizer(Image logo)
+        {
+            {
+                if (this.pictureBox1.InvokeRequired)
+                {
+                    SetPictureCallback p = new SetPictureCallback(LogoRandomizer);
+                    this.Invoke(p, new object[] { logo });
+                }
+                else
+                {
+                    this.pictureBox1.Image = logo;
+                }
+            }
+        }
+
+        #endregion
+
+        #endregion
+
+        private void cueTextBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            cueTextBox1.Visible = false;
+
+            pictureBox2.Image = Properties.Resources.robot_hands___down;
+
+            pictureBox2.Visible = true;
+
+            pictureBox1.Cursor = Cursors.Hand;
+        }
+
+        #region pictureBox
+
+        #region pictureBox1
+
+        #region Variables
+
+        private bool pBox1;
+
+        #endregion
+
+        private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (cueTextBox1.Visible == false)
+            {
+                if (!pBox1)
+                {
+                    form2.Visible = true;
+
+                    form2.Location = new Point(this.Location.X + 248, this.Location.Y - 5);
+
+                    pBox1 = true;
+                }
+                else
+                {
+                    form2.Visible = false;
+
+                    pBox1 = false;
+                }
+            }
+        }
+
+        #endregion
+
+        #region pictureBox2
+
+        #region Variables
+
+        System.Threading.Timer randomizer;
+        
+        private bool pBox2;
+        
+        #endregion
+
+        private void pictureBox2_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+
+            }
+            else if (!pBox2)
+            {
+                pictureBox2.Image = Properties.Resources.robot_gif;
+
+                randomizer = new System.Threading.Timer(CallLogoRandomizer, null, 0, 3000);
+
+                pBox2 = true;
+            }
+            else
+            {
+                pictureBox1.Image = Properties.Resources.supreme_box_logo___1;
+                pictureBox2.Image = Properties.Resources.robot_hands___down;
+                
+                randomizer.Dispose();
+
+                pBox2 = false;
+            }
+        }
+
+        #endregion
+
+        #endregion
+    }
+}

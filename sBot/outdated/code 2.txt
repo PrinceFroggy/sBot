@@ -1,0 +1,18 @@
+#region Image processor
+            /*
+            try
+            {
+                byte[] data = new WebClient().DownloadData(product);
+
+                MemoryStream stream = new MemoryStream(data);
+
+                img = Image.FromStream(stream);
+
+                stream.Close();
+            }
+            catch (Exception)
+            {
+                img = null;
+            }
+            */
+            #endregion

@@ -1,0 +1,108 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Drawing;
+using System.Net;
+using System.Collections;
+using HtmlAgilityPack;
+
+namespace sBot
+{
+    class Supreme : SupremeList
+    {
+        public Supreme()
+        {
+
+        }
+
+        public void Start()
+        {
+
+        }
+
+        public void Stop()
+        {
+
+        } 
+    }
+
+    class SupremeList : List<SupremeItem>
+    {
+        private bool executed = false;
+
+        public SupremeList()
+        {
+            HtmlAgilityPack.HtmlDocument doc = null;
+
+            if (!executed)
+            {
+                try
+                {
+                    doc = new HtmlAgilityPack.HtmlDocument();
+                    doc.LoadHtml(new WebClient().DownloadString("http://www.supremenewyork.com/shop/all"));
+
+                    executed = true;
+                }
+                catch (Exception)
+                {
+                    executed = false;
+                }
+            }
+            
+            PopulateWith(doc.DocumentNode.Descendants("article"));
+        }
+
+        void PopulateWith(IEnumerable _elements)
+        {
+            foreach (HtmlNode node in _elements)
+            {
+                try
+                {
+                    this.Add(new SupremeItem(node.SelectSingleNode("a/img").Attributes[0].Value, node.SelectSingleNode("a/img").Attributes[2].Value, node.SelectSingleNode("a").Attributes[0].Value, new Size(Convert.ToInt32(node.SelectSingleNode("a/img").Attributes[1].Value), Convert.ToInt32(node.SelectSingleNode("a/img").Attributes[3].Value)), node.Descendants("div").Any(div => div.Attributes["class"] != null && div.Attributes["class"].Value == "sold_out_tag")));
+                }
+                catch (Exception)
+                {
+                    this.Add(new SupremeItem());
+                }
+            }
+        }
+    }
+
+    class SupremeItem
+    {
+        private string name;
+        private string product;
+        private string href;
+        private Size size;
+        private bool sold;
+
+        public SupremeItem()
+        {
+            name = string.Empty;
+            product = string.Empty;
+            href = string.Empty;
+            size = Size.Empty;
+            sold = false;
+        }
+
+        public SupremeItem(string _name, string _product, string _href, Size _size, bool _sold)
+        {
+            name = _name;
+            product = _product;
+            href = _href;
+            size = _size;
+            sold = _sold;
+        }
+
+        bool isEmpty() { return ( string.IsNullOrEmpty(name) && string.IsNullOrEmpty(product) && string.IsNullOrEmpty(href) ? true : false ); }
+
+        public string getName() { return name; }
+
+        public string getProduct() { return product; }
+
+        public string getHref() { return href; }
+
+        public Size getSize() { return size; }
+    }
+}

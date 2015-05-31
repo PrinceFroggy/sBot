@@ -1,0 +1,7 @@
+C:\Users\Andrew\Documents\Visual Studio 2010\Projects\sBot\sBot\bin\Debug\sBot.exe
+C:\Users\Andrew\Documents\Visual Studio 2010\Projects\sBot\sBot\bin\Debug\sBot.pdb
+C:\Users\Andrew\Documents\Visual Studio 2010\Projects\sBot\sBot\obj\x86\Debug\sBot.Form1.resources
+C:\Users\Andrew\Documents\Visual Studio 2010\Projects\sBot\sBot\obj\x86\Debug\sBot.Properties.Resources.resources
+C:\Users\Andrew\Documents\Visual Studio 2010\Projects\sBot\sBot\obj\x86\Debug\sBot.csproj.GenerateResource.Cache
+C:\Users\Andrew\Documents\Visual Studio 2010\Projects\sBot\sBot\obj\x86\Debug\sBot.exe
+C:\Users\Andrew\Documents\Visual Studio 2010\Projects\sBot\sBot\obj\x86\Debug\sBot.pdb
