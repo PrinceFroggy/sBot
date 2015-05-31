@@ -167,8 +167,6 @@ namespace sBot
         {
             _mutex = new Mutex(false, "sBot");
 
-            // keep the mutex reference alive until the normal 
-            //termination of the program
             GC.KeepAlive(_mutex);
 
             try
@@ -177,10 +175,6 @@ namespace sBot
             }
             catch (AbandonedMutexException)
             {
-                // if one thread acquires a Mutex object 
-                //that another thread has abandoned 
-                //by exiting without releasing it
-
                 _mutex.ReleaseMutex();
                 return _mutex.WaitOne(0, false);
             }
