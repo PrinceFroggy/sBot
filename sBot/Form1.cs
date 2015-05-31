@@ -254,8 +254,8 @@ namespace sBot
         {
             if (IsSingleInstance())
             {
-                //if (CalculateVerifiedInstance("sBot"))
-                //{
+                if (CalculateVerifiedInstance("sBot"))
+                {
                     button1.Visible = false;
 
                     pictureBox2.Image = Properties.Resources.robot_hands___down;
@@ -263,7 +263,7 @@ namespace sBot
                     pictureBox2.Visible = true;
 
                     pictureBox1.Cursor = Cursors.Hand;
-                //}
+                }
             }
 
             groupBox1.Focus();
