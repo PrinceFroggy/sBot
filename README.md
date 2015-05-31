@@ -1,4 +1,5 @@
 # sBot
+
 A supreme bot.
 
 WEBSITE: http://jahpre.me/
