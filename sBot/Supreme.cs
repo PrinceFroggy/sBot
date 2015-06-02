@@ -306,6 +306,8 @@ namespace sBot
 
                             SupremeCountry.FireEvent("onchange");
                         }
+                        
+                        // you can copy the format below to select any EUROPEAN country here...as of right now this code only works for the NORTH AMERICAN shipping
 
                         System.Windows.Forms.HtmlElement SupremeState = null;
 
