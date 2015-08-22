@@ -6,6 +6,6 @@ A supreme bot.
 
 WEBSITE: http://jahpre.me/
 
-CREDIT: ANDREW JUSTIN SOLESA
+CREDIT: Andrew Justin Solesa
 
 DISCLOSURE: _ xxxx _ /_;-.__ / _\ _.-;_\ `-._`'`_/'`.-' `\ /` | / /-.( \_._\ \ \`; > |/ / // |// ajs \(\ ``
