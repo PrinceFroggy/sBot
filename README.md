@@ -6,6 +6,6 @@ A supreme bot.
 
 WEBSITE: http://jahpre.me/
 
-CREDIT: Andrew Justin Solesa
+Credits: Andrew Justin Solesa (https://github.com/Shrooms)
 
 DISCLOSURE: _ xxxx _ /_;-.__ / _\ _.-;_\ `-._`'`_/'`.-' `\ /` | / /-.( \_._\ \ \`; > |/ / // |// ajs \(\ ``
