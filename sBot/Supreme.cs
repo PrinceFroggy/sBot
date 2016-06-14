@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -631,7 +631,8 @@ namespace sBot
                     switch (i)
                     {
                         case 0:
-                            #region PRE SS15
+                          //-----//
+                            #region SS14
 
                             // HTML DOCUMENTATION
 
@@ -665,8 +666,8 @@ namespace sBot
                             // this.Add(new SupremeItem(node.SelectSingleNode("a/img").Attributes[0].Value, node.SelectSingleNode("a/img").Attributes[2].Value, node.SelectSingleNode("a").Attributes[0].Value, node.Descendants("div").Any(div => div.Attributes["class"] != null && div.Attributes["class"].Value == "sold_out_tag")));
 
                             #endregion
-                          //--------//
-                            #region POS SS15
+                          //-----//
+                            #region SS15
 
                             // HTML DOCUMENTATION
 
@@ -698,7 +699,7 @@ namespace sBot
                                         </body>
 
                                     </html>
-                            */
+                            
 
                             if (node.SelectSingleNode("div/a").Attributes[0].Value.Equals("/shop/skate/cherry/dvd"))
                             {
@@ -708,7 +709,20 @@ namespace sBot
                             {
                                 this.Add(new SupremeItem(node.SelectSingleNode("div/a/img").Attributes[0].Value, node.SelectSingleNode("div/a/img").Attributes[2].Value, node.SelectSingleNode("div/a").Attributes[0].Value, node.Descendants("div").Any(div => div.Attributes["class"] != null && div.Attributes["class"].Value == "sold_out_tag")));
                             }
+                            */
                             #endregion
+                          //-----//
+                            #region SS16
+
+                            HtmlAgilityPack.HtmlDocument EncryptedName = null;
+
+                            EncryptedName = new HtmlAgilityPack.HtmlDocument();
+                            EncryptedName.LoadHtml(new WebClient().DownloadString("http://www.supremenewyork.com" + node.SelectSingleNode("div/a").Attributes[0].Value));
+
+                            this.Add(new SupremeItem(EncryptedName.DocumentNode.SelectSingleNode("//div[@id='details'] //h1").InnerText, node.SelectSingleNode("div/a/img").Attributes[2].Value, node.SelectSingleNode("div/a").Attributes[0].Value, node.Descendants("div").Any(div => div.Attributes["class"] != null && div.Attributes["class"].Value == "sold_out_tag")));
+
+                            #endregion
+                          //-----//
                             break;
 
                         case 1:
