@@ -399,8 +399,8 @@ namespace sBot
 
                         SupremeCartCC = Form1.SupremeCartCC;
 
-                        SupremeCartCC.Document.GetElementById("onb").SetAttribute("value", Information[0].Number);
-                        SupremeCartCC.Document.GetElementById("number_v").SetAttribute("value", Information[0].Cvv);
+                        SupremeCartCC.Document.GetElementById("cnb").SetAttribute("value", Information[0].Number);
+                        SupremeCartCC.Document.GetElementById("vval").SetAttribute("value", Information[0].Cvv);
 
                         #endregion
                         
