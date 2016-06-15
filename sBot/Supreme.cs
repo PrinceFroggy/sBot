@@ -730,7 +730,7 @@ namespace sBot
                             break;
 
                         case 2:
-                            this.Add(new SupremeItem(node.SelectSingleNode("a").Attributes[0].Value, Convert.ToBoolean(node.SelectSingleNode("a").Attributes[3].Value), node.SelectSingleNode("a").Attributes[5].Value));
+                            this.Add(new SupremeItem(node.SelectSingleNode("a").Attributes[0].Value, Convert.ToBoolean(node.SelectSingleNode("a").Attributes[4].Value), node.SelectSingleNode("a").Attributes[6].Value));
                             break;
                     }
                 }
