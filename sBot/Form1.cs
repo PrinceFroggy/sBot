@@ -248,7 +248,7 @@ namespace sBot
         {
             if (IsSingleInstance())
             {
-                if (CalculateVerifiedInstance("sBot"))
+                //if (CalculateVerifiedInstance("sBot"))
                 {
                     button1.Visible = false;
 
