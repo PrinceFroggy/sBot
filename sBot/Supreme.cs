@@ -188,7 +188,7 @@ namespace sBot
 
                             for (int s = 0; s < Design.Count; s++)
                             {
-                                if (Compute(Proposal[Item].Design, Design[s].Design) < 1)
+                                if (Compute(Proposal[Item].Design, Design[s].Design) < 1 || Design[s].Design.Contains(Proposal[Item].Design))
                                 {
                                     if (!Design[s].Sold)
                                     {
