@@ -154,7 +154,7 @@ namespace sBot
 
                             for (int a = 0; a < List.Count; a++)
                             {
-                                if (Compute(Proposal[Item].Tag, List[a].Name) < 4)
+                                if (Compute(Proposal[Item].Tag, List[a].Name) < 4 || List[a].Name.Contains(Proposal[Item].Tag))
                                 {
                                     Doc = new HtmlAgilityPack.HtmlDocument();
                                     Doc.LoadHtml(new WebClient().DownloadString("http://www.supremenewyork.com" + List[a].Href));
