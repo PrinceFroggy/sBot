@@ -11,10 +11,6 @@ References: http://www.supremenewyork.com/
 
 Disclosure: _ xxxx _ /_;-.__ / _\ _.-;_\ `-._`'`_/'`.-' `\ /` | / /-.( \_._\ \ \`; > |/ / // |// ajs \(\ ``
 
-STILL WORKING!!!
+THIS DOES NOT WORK AS OF SUNDAY DECEMBER 11TH 2016 DUE TO A BLOCK OF CHECKOUT USING .NET CONTROL WEBBROWSER!
 
-YOU NEED TO BE A PROGRAMMER TO BUILD AND RUN THIS ON YOUR OWN ELSE IT WILL NOT WORK DUE TO NOT SAME FRAMEWORK INSTALLED!
-
-https://www.youtube.com/watch?v=tv7Q7u_CF0A
-
-INSTRUCTIONAL VIDEO THERE!
+WILL FIX.
