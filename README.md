@@ -13,8 +13,8 @@ Disclosure: _ xxxx _ /_;-.__ / _\ _.-;_\ `-._`'`_/'`.-' `\ /` | / /-.( \_._\ \ \
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-This is still working; however, one part of this program is blocked by Supreme which is the navigation to the checkout.
+OUTDATED! 
 
-I will be starting a new project called csBot.
+PATIENCE!
 
-Thanks.
+STAY TUNED!
