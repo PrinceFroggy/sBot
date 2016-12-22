@@ -1,0 +1,24 @@
+It has come to my attention that I have been IP banned from Supreme New York website.
+
+Due to this IP ban, I can no longer continue my effort for releasing a new and improved sBot.
+
+Originally, Supreme tried to screw me by encrypting their item names; however, as you can see in the source, I got around that easily.
+
+Just recently, they blocked the native control webBrowser from being able to navigate to the checkout.
+
+Overall, I found a way to get around the block, using CEFSharp .net framework 4.2.5.
+
+Just today, it came to my attention that I have been IP banned from the whole Supreme website; therefore, without further ado...
+I would love to introduce to you sBot (csBot) close to finished.
+
+CEFSharp uses the Chromium webBrowser and does not like DOM events; therefore, as you can see in this source, I am using javascript to navigate.
+
+Thank you all for your kind Stars, Forks, Issues, and Watches.
+
+Sorry that I could not fully update my bot as I can't even debug due to the IP ban; however, this was an amazing start close to finish!
+
+Enjoy,
+
+Andrew.
+
+SOURCE LINK = 
