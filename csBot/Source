@@ -14,7 +14,7 @@ Just today, it came to my attention that I have been IP banned from the whole Su
 I would love to introduce to you sBot (csBot) close to finished.
 
 CEFSharp uses the Chromium webBrowser and does not like DOM events; therefore, as you can see in this source, 
-I am using javascript to navigate.
+I am using javascript to navigate. JAVASCRIPT is the main feature for this browser.
 
 Thank you all for your kind Stars, Forks, Issues, and Watches.
 
