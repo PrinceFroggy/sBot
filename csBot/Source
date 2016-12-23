@@ -4,7 +4,8 @@ due to the first round of encryption (not even committing to the second round or
 
 Due to this IP ban, I can no longer continue my effort for releasing a new and improved sBot.
 
-Originally, Supreme tried to screw me by encrypting their item names; however, as you can see in the source, I got around that easily.
+Originally, Supreme tried to screw me by encrypting their item names; however, as you can see in the source,
+I got around that easily.
 
 Just recently, they blocked the native control webBrowser from being able to navigate to the checkout.
 
@@ -18,7 +19,8 @@ I am using javascript to navigate. JAVASCRIPT is the main feature for this brows
 
 Thank you all for your kind Stars, Forks, Issues, and Watches.
 
-Sorry that I could not fully update my bot as I can't even debug due to the IP ban; however, this was an amazing start close to finish!
+Sorry that I could not fully update my bot as I can't even debug due to the IP ban; however, 
+this was an amazing start close to finish!
 
 Enjoy,
 
