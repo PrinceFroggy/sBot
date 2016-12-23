@@ -11,7 +11,7 @@ Just recently, they blocked the native control webBrowser from being able to nav
 
 Overall, I found a way to get around the block, using CEFSharp .net framework 4.2.5.
 
-Just today, it came to my attention that I have been IP banned from the whole Supreme website; therefore, without further ado...
+Just today, it came to my attention that I have been IP banned from the whole Supreme website; therefore, without further ado..
 I would love to introduce to you sBot (csBot) close to finished.
 
 CEFSharp uses the Chromium webBrowser and does not like DOM events; therefore, as you can see in this source, 
