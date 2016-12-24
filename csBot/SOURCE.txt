@@ -4,7 +4,7 @@ Since the beginning of this development, I had the intention of releasing for fr
 
 A year and a half later, Supreme encrypted their item names...which I got around.
 
-A year and a half later, supreme encrypted their URL's...which I got around.
+A year and a half later, Supreme encrypted their URL's...which I got around.
 
 Just recently, Supreme blocked the native webBrowser control...which I got around.
 
