@@ -1,0 +1,30 @@
+Dear User's,
+
+Since the beginning of this development, I had the intention of releasing for free; which I did.
+
+A year and a half later, Supreme encrypted their item names...which I got around.
+
+A year and a half later, supreme encrypted their URL's...which I got around.
+
+Just recently, Supreme blocked the native webBrowser control...which I got around.
+
+I won the war, lost the battle per se.
+
+This time around, I found a library called CEFSharp using the .net framework 4.2.5.
+
+This webBrowser is a Chrome webBrowser and uses javascript, not DOM.
+
+I released this unfinished (90% finished) due to it has caused me unnecessary stress while also being IP banned.
+
+If you navigate around my source, you will notice the flow of direction I was going towards and the differences
+between sBot and csBot (sBot updated).
+
+None of the ID's for SUPREME has changed; just needed a differen't way of accessing the values, hence javascript.
+
+Overall, I will be starting my next project of a TicketMaster bot.
+
+Salute,
+
+Andrew Justin Solesa
+
+SOURCE LINK = https://mega.nz/#!AIVEwKCA!u9VzJhrZNYe86XXMgIeNeOgsUTsV1vmeTqirWWmq4Xc
