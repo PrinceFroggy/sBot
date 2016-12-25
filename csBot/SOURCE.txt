@@ -21,7 +21,7 @@ between sBot and csBot (sBot updated).
 
 None of the ID's for SUPREME has changed; just needed a differen't way of accessing the values, hence javascript.
 
-Overall, I will be starting my next project of a TicketMaster bot.
+Overall, I will be starting my next project of a bot.
 
 Salute,
 
