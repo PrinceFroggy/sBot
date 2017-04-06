@@ -7,6 +7,8 @@ References: http://jahpre.me/
 
 References: http://www.supremenewyork.com/
 
+Credits: Andrew Justin Solesa (https://github.com/PrinceFroggy)
+
 Disclosure: _ xxxx _ /_;-.__ / _\ _.-;_\ `-._`'`_/'`.-' `\ /` | / /-.( \_._\ \ \`; > |/ / // |// ajs \(\ ``
 
 R.I.P 2013-2016
